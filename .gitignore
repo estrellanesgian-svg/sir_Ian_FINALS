@@ -1,29 +1,50 @@
+
 # Python virtual environment
 backend/venv/
 backend/.venv/
 backend/env/
+venv/
+.venv/
+env/
 
 # Python cache
 __pycache__/
 **/__pycache__/
 *.py[cod]
+*.pyo
 
-# React
+# Node modules
 node_modules/
-frontend/node_modules/
+**/node_modules/
+
+# Frontend build files
 frontend/dist/
 frontend/build/
 
 # Environment files
 .env
 .env.*
+!.env.example
 
 # Django database
-backend/db.sqlite3
-db.sqlite3
+*.sqlite3
+!backend/db.sqlite3
+
+# Old database backups
+backend/db_backup.sqlite3
+backend/old_database/
 
 # IDE and system files
 .vscode/
 .idea/
 .DS_Store
 Thumbs.db
+
+# Log and temporary files
+*.log
+*.tmp
+*.bak
+
+# IMPORTANT:
+# Do not ignore backend/media/
+# Keep uploaded team logos and product images.
